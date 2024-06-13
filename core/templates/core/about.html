@@ -1,0 +1,42 @@
+{% load static %}
+<section id="about" class="About-me scroll-mt-28">
+    <div class="flex flex-col items-center gap-20">
+        <div class="flex flex-col items-center">
+            <h1 class="text-2xl font-black
+            dark:text-neutral-300">Sobre mi</h1>
+            <p class="text-sm text-neutral-400">Te cuento un poco más sobre mi</p>
+        </div>
+        <article class="flex flex-col items-center gap-6 md:flex-row">
+            <div class="min-w-80">
+                <img class="rounded-2xl max-h-52 md:max-h-80 mx-auto" src="{% static 'img/aboutme.jpg' %}" alt="aboutme">
+            </div>
+            <div class="flex flex-col items-center gap-6 md:max-w-md md:items-start">
+                <div class="text-center md:text-start flex flex-col gap-4">
+                    <p class="text-sm leading-relaxed tracking-wide dark:text-neutral-300">Soy Ingeniero en Sistemas Informáticos. <span class="font-bold">Actualmente me dedico a desarrollar sistemas webs con Django y Django REST Framework.</span> Sin embargo, mi pasión por la tecnología y el diseño me ha llevado a desarrollar habilidades complementarias como <span class="font-bold">diseñador UI/UX, maquetador web con un dominio avanzado de HTML, CSS y frameworks CSS como Tailwind.</span></p>
+                    <p class="text-sm leading-relaxed tracking-wide dark:text-neutral-300">Me enfoco en <span class="font-bold">crear soluciones eficientes y escalables,</span> combinando un sólido conocimiento técnico con un enfoque creativo en la experiencia del usuario.</p>
+                    <section class="flex max-w-80 md:max-w-full gap-4 items-center md:justify-between mx-auto md:mx-0">
+                        <div>
+                            <h2 class="text-center font-extrabold text-2xl dark:text-neutral-300">02+</h2>
+                            <p class="text-center text-sm font-semibold text-neutral-400">Años de experiencia</p>
+                        </div>
+                        <div class="border border-gray-200 dark:border-neutral-600 h-[40px]"></div>
+                        <div>
+                            <h2 class="text-center font-extrabold text-2xl dark:text-neutral-300">04+</h2>
+                            <p class="text-center text-sm font-semibold text-neutral-400">Proyectos completados</p>
+                        </div>
+                        <div class="border border-gray-200 dark:border-neutral-600 h-[40px]"></div>
+                        <div>
+                            <h2 class="text-center font-extrabold text-2xl dark:text-neutral-300">02+</h2>
+                            <p class="text-center text-sm font-semibold text-neutral-400">Empresas trabajadas</p>
+                        </div>
+                    </section>
+                   
+                </div>
+                 <a class="bg-primary text-white py-4 px-6 rounded-lg text-sm font-semibold flex gap-2 items-center justify-center hover:bg-yellow-600 transition-colors" href="https://www.dropbox.com/scl/fi/hmbv54wqh4p1prxiqrj4e/Cv-Kelvin.pdf?rlkey=9v42pevc4rrmki3pg0fodwpz0&dl=0">
+                    Descarga mi CV
+                    <i class="uil uil-download-alt"></i>
+                </a>
+            </div>
+        </article>
+    </div>
+</section>

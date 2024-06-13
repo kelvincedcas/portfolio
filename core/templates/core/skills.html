@@ -1,0 +1,151 @@
+<section id="skills" class="Skills scroll-mt-28">
+    <div class="flex flex-col items-center gap-20">
+        <div class="flex flex-col items-center">
+            <h1 class="text-2xl font-black dark:text-neutral-300">Habilidades</h1>
+            <p class="text-sm text-neutral-400">Este es mi nivel técnico</p>
+        </div>
+        <div class="w-full flex flex-col gap-6 text-sm md:grid md:grid-cols-2 md:max-w-4xl  dark:text-neutral-300">
+            <!-- Skill 1 -->
+            <div class="flex flex-col gap-2">
+                <button onclick="openSkillsFrontend()" id="header_skill_frontend" class="flex justify-between items-center cursor-pointer">
+                    <div class="flex gap-3">
+                        <i class="text-primary text-3xl uil uil-brackets-curly"></i>
+                        <div class="flex flex-col items-start">
+                            <h1 class="text-xl font-bold dark:text-neutral-300">Front-end Developer</h1>
+                            <span class="text-sm text-neutral-400">Más de 2 años de experiencia</span>
+                        </div>
+                    </div>
+                    <i id="row_frontend" class="text-primary text-4xl uil uil-angle-down"></i>
+                </button>
+                <div class="mx-auto w-4/5 border-b-[1px] dark:border-neutral-700">
+                </div>
+                <div id="container_skill_frontend" class="flex flex-col items-center gap-3 h-0 overflow-hidden transition-all duration-500 ease-in">
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>HTML</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-11/12"></span>
+                        </div>
+                    </div>
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>CSS</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-11/12"></span>
+                        </div>
+                    </div>
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>Tailwind</h3>
+                            <span>80%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-4/5"></span>
+                        </div>
+                    </div>
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>JavaScript</h3>
+                            <span>50%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-2/4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 2 -->
+            <div class="flex flex-col gap-2">
+                <button onclick="openSkillsBackend()" class="flex justify-between items-center cursor-pointer">
+                    <div class="flex gap-3 items-center">
+                        <i class="text-primary text-3xl uil uil-server"></i>
+                        <div class="flex flex-col items-start">
+                            <h1 class="text-xl font-bold">Back-end Developer</h1>
+                            <span class="text-sm text-neutral-400">Más de 1 año de experiencia</span>
+                        </div>
+                    </div>
+                    <i id="row_backend" class="text-primary text-4xl uil uil-angle-down"></i>
+                </button>
+                <div class="mx-auto w-4/5 border-b-[1px] dark:border-neutral-700">
+                </div>
+                <div id="container_skill_backend" class="flex flex-col items-center gap-3 h-0 overflow-hidden">
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>Python</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-11/12"></span>
+                        </div>
+                    </div>
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>Django</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-11/12"></span>
+                        </div>
+                    </div>
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>Django REST Framework</h3>
+                            <span>75%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-9/12"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Skill 3 -->
+            <div class="flex flex-col gap-2">
+                <button onclick="openSkillsDesigner()" class="flex justify-between items-center cursor-pointer">
+                    <div class="flex gap-3 items-center">
+                        <i class="text-primary text-3xl uil uil-edit"></i>
+                        <div class="flex flex-col items-start">
+                            <h1 class="text-xl font-bold">Diseñador</h1>
+                            <span class="text-sm text-neutral-400">Más de 2 años de experiencia</span>
+                        </div>
+                    </div>
+                    <i id="row_designer" class="text-primary text-4xl uil uil-angle-down"></i>
+                </button>
+                <div class="mx-auto w-4/5 border-b-[1px] dark:border-neutral-700">
+                </div>
+                <div id="container_skill_designer" class="flex flex-col items-center gap-3 h-0 overflow-hidden">
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>Figma</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-11/12"></span>
+                        </div>
+                    </div>
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>Illustrator</h3>
+                            <span>90%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-11/12"></span>
+                        </div>
+                    </div>
+                    <div class="w-4/5">
+                        <div class="flex justify-between">
+                            <h3>Photoshop</h3>
+                            <span>80%</span>
+                        </div>
+                        <div class="h-3 bg-yellow-200 rounded-md">
+                            <span class="block h-3 bg-primary rounded-md w-4/5"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,240 @@
+<section id="services" class="Services scroll-mt-28">
+    <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mb-20">
+            <h1 class="text-2xl font-black dark:text-neutral-300">Servicios</h1>
+            <p class="text-sm text-neutral-400">Estos son los diferentes servicios que ofrezco</p>
+        </div>
+        <div class="flex flex-col gap-5 md:grid lg:grid-cols-3 md:grid-cols-2 md:max-w-5xl">
+            <!--Service 1-->
+            <div x-data="{ openFront: false }" class="bg-white min-h-32 shadow-lg hover:shadow-2xl rounded-xl flex flex-col gap-3 py-12 px-7 w-full transition-shadow duration-300 dark:text-neutral-300 dark:bg-neutral-800">
+                <div class="flex flex-col gap-3">
+                    <i class="text-primary text-center text-3xl uil uil-brackets-curly"></i>
+                    <div class="mx-auto w-full border-b-[1px] dark:border-neutral-700">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 justify-between h-full">
+                    <h2 class="font-bold text-lg">Front-end Developer</h2>
+                    <p class="dark:text-neutral-400">Mis habilidades como desarrollador front-end pueden ayudarte a conseguir sistemas con interfaces atractivas, intuitivas y modernas.</p>
+                    <button @click="openFront = ! openFront" class="flex gap-2 text-sm cursor-pointer font-semibold hover:translate-x-1 hover:text-primary transition-all">
+                    Más info
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>  
+                    </button>
+                </div>
+                <section x-cloak x-show="openFront" x-transition.opacity.duration.400ms class="flex fixed top-0 left-0 bottom-0 right-0 bg-black bg-opacity-50 p-6">
+                    <div @click.outside="openFront = false" class="bg-white m-auto rounded-xl p-8 flex flex-col gap-2 dark:bg-darkmode dark:text-neutral-400">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h1 class="text-center font-bold text-lg text-dark dark:text-neutral-300">Front-end Developer</h1>
+                            </div>
+                            <button @click="openFront = false" id="button_back" class="text-gray-600 font-semibold gap-1 hover:text-primary hover:font-bold flex dark:text-neutral-300
+                            dark:hover:text-primary ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mx-auto w-full border-b-[1px] dark:border-neutral-700 mt-2">
+                        </div>
+                        <div class="flex flex-col gap-5 mt-4">
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Desarrollar las intefaces de usuario.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Desarrollar páginas webs responsivas y funcionales.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Crear los elementos interactivos de UX.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Gestionar el SEO de las webs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Service 2-->
+            <div x-data="{ openBack: false }" class="bg-white min-h-32 shadow-lg hover:shadow-2xl rounded-xl flex flex-col gap-3 py-12 px-7 w-full transition-shadow duration-300 dark:text-neutral-300 dark:bg-neutral-800">
+                <div class="flex flex-col gap-3">
+                    <i class="text-primary text-center text-3xl uil uil-server"></i>
+                    <div class="mx-auto w-full border-b-[1px] dark:border-neutral-700">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 justify-between h-full">
+                    <h2 class="font-bold text-lg">Back-end Developer</h2>
+                    <p class="dark:text-neutral-400">Mis habilidades como desarrollador back-end pueden ayudarte a desarrollar las funcionalidades necesarias en el servidor.</p>
+                    <button @click="openBack = ! openBack" class="flex gap-2 text-sm cursor-pointer font-semibold hover:translate-x-1 hover:text-primary transition-all">
+                        Más info
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>  
+                    </button>
+                </div>
+                <section x-cloak x-show="openBack" x-transition.opacity.duration.400ms class="flex fixed top-0 left-0 bottom-0 right-0 bg-black bg-opacity-50 p-6 ">
+                    <div @click.outside="openBack = false" class="bg-white m-auto rounded-xl p-8 flex flex-col gap-2 dark:bg-darkmode dark:text-neutral-400">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h1 class="text-center font-bold text-lg text-dark dark:text-neutral-300">Back-end Developer</h1>
+                            </div>
+                            <button @click="openBack = false" id="button_back" class="text-gray-600 font-semibold gap-1 hover:text-primary hover:font-bold flex dark:text-neutral-300
+                            dark:hover:text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mx-auto w-full border-b-[1px] dark:border-neutral-700 mt-2">
+                        </div>
+                        <div class="flex flex-col gap-5 mt-4">
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Desarrollar API's con Django REST Framework.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Gestionar correctamente los endpoints de las API's.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Implementar las funcionalidades necesarias.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Protección de rutas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Service 3-->
+            <div x-data="{ openDesigner: false }" class="bg-white min-h-32 shadow-lg hover:shadow-2xl rounded-xl flex flex-col gap-3 py-12 px-7 w-full transition-shadow duration-300 dark:text-neutral-300 dark:bg-neutral-800">
+                <div class="flex flex-col gap-3">
+                    <i class="text-primary text-center text-3xl uil uil-edit"></i>
+                    <div class="mx-auto w-full border-b-[1px] dark:border-neutral-700">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-3 justify-between h-full">
+                    <h2 class="font-bold text-lg">Web & Graphic Designer</h2>
+                    <p class="dark:text-neutral-400">A través de mis sólidos conocimientos como diseñador web y gráfico puedo ayudarte a conseguir tus metas.</p>
+                    <button @click="openDesigner = ! openDesigner" class="flex gap-2 text-sm cursor-pointer font-semibold hover:translate-x-1 hover:text-primary transition-all">
+                    Más info
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>  
+                    </button>
+                </div>
+                <section x-cloak x-show="openDesigner" x-transition.opacity.duration.400ms class="flex fixed top-0 left-0 bottom-0 right-0 bg-black bg-opacity-50 p-6">
+                    <div @click.outside="openDesigner = false" class="bg-white m-auto rounded-xl p-8 flex flex-col gap-2 dark:bg-darkmode dark:text-neutral-400">
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <h1 class="text-center font-bold text-lg text-dark dark:text-neutral-300">Web & Graphic Designer</h1>
+                            </div>
+                            <button @click="openDesigner = false" id="button_back" class="text-gray-600 font-semibold gap-1 hover:text-primary hover:font-bold flex dark:text-neutral-300 dark:hover:text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mx-auto w-full border-b-[1px] dark:border-neutral-700 mt-2">
+                        </div>
+                        <div class="flex flex-col gap-5 mt-4">
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Diseñar las interfaces de usuario.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Crear prototipos interactivos.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Crear y posicionar la marca de tu compañía.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <div class="my-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-5 text-primary">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p>Crear los wireframes de las interfaces de usuario.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
