@@ -1049,8 +1049,16 @@ select{
   min-width: 20rem;
 }
 
-.min-w-96{
-  min-width: 24rem;
+.min-w-52{
+  min-width: 13rem;
+}
+
+.min-w-44{
+  min-width: 11rem;
+}
+
+.min-w-48{
+  min-width: 12rem;
 }
 
 .max-w-80{
@@ -1668,6 +1676,10 @@ select{
 
   .md\:min-w-60{
     min-width: 15rem;
+  }
+
+  .md\:min-w-96{
+    min-width: 24rem;
   }
 
   .md\:max-w-3xl{
