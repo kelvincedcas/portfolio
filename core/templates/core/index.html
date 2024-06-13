@@ -1,7 +1,7 @@
-{% extends 'core/base.html' %}
+<!-- {% extends 'core/base.html' %}
 
     {% block content %}
-    <!-- <main class="flex flex-col p-7 gap-20 md:px-24 leading-relaxed">
+    <main class="flex flex-col p-7 gap-20 md:px-24 leading-relaxed">
         {% include 'core/home.html' %}
         {% include 'core/about.html' %}
         {% include 'core/skills.html' %}
@@ -9,6 +9,23 @@
         {% include 'core/services.html' %}
         {% include 'core/portfolio.html' %}
         {% include 'core/contact.html' %}
-    </main> -->
+    </main>
+    {% endblock content %} -->
+
+
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth 
+{% if is_dark_theme %} dark {% endif %}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contrata a Kelvin Cedeño, desarrollador fullstack de Python, Django, Django REST. Diseñador UI/UX con sólidos conocimientos para desarrollar interfaces de usuario atractivas, minimalistas y modernas.">
+    <title>Kelvin Cedeño | Django Full Stack Developer</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    {% tailwind_css %}
+</head>
+<body class="font-raleway text-dark w-full leading-relaxed tracking-wide dark:bg-darkmode h-full">
     <h1>Hola</h1>
-    {% endblock content %}
+</body>
+</html>
