@@ -1,4 +1,5 @@
 {% load static tailwind_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth 
 {% if is_dark_theme %} dark {% endif %}">
@@ -7,11 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contrata a Kelvin Cedeño, desarrollador fullstack de Python, Django, Django REST. Diseñador UI/UX con sólidos conocimientos para desarrollar interfaces de usuario atractivas, minimalistas y modernas.">
     <title>Kelvin Cedeño | Django Full Stack Developer</title>
-    <!--<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">-->
-    {% load static %}
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
-    <!--{% load static %}
-    <link rel="shortcut icon" href="{% static 'img/favicon.svg' %}" type="image/x-icon">-->
+    <link rel="shortcut icon" href="{% static 'img/favicon.svg' %}" type="image/x-icon">
     {% tailwind_css %}
 </head>
 <body class="font-raleway text-dark w-full leading-relaxed tracking-wide dark:bg-darkmode">
@@ -156,7 +155,6 @@
     <main class="flex flex-col p-7 gap-20 md:px-24 leading-relaxed">
         <section id="home" class="home mt-28 scroll-mt-36 lg:flex lg:items-center lg:justify-center lg:gap-16">
             <div class="w-full min-w-80 md:w-auto flex justify-center md:order-last">
-                {% load static %}
                 <img class="max-h-60 lg:max-h-80" src="{% static 'img/foto3.png' %}" alt="foto3">
             </div>
             <div class="max-w-lg min-w-96">
@@ -202,7 +200,6 @@
                     dark:text-neutral-300">Sobre mi</h1>
                     <p class="text-sm text-neutral-400">Te cuento un poco más sobre mi</p>
                 </div>
-                {% load static %}
                 <article class="flex flex-col items-center gap-6 md:flex-row">
                     <div class="min-w-80">
                         <img class="rounded-2xl max-h-52 md:max-h-80 mx-auto" src="{% static 'img/aboutme.jpg' %}" alt="aboutme">
@@ -809,7 +806,6 @@
                 <div class="flex flex-col gap-10 md:grid md:grid-cols-2 md:max-w-5xl">
                     <!--Proyecto 1-->
                         <div class="flex flex-col gap-4">
-                            {% load static %}
                             <img class="rounded-xl" src="{% static 'img/proyecto1.jpg' %}" alt="project1">
                             <div class="flex flex-col gap-4">
                                 <div>
@@ -862,7 +858,6 @@
                         </div>
                     <!--Proyecto 2-->
                         <div class="flex flex-col gap-4">
-                            {% load static %}
                             <img class="rounded-xl" src="{% static 'img/proyecto2.jpg' %}" alt="project2">
                             <div class="flex flex-col gap-4">
                                 <div>
@@ -945,7 +940,6 @@
                             </div>
                         </div>
                         <div class="w-full md:w-auto md:min-w-60 flex justify-center">
-                            {% load static %}
                             <img class=" max-h-60" src="{% static 'img/foto3.png' %}" alt="">
                         </div>
                     </div>
@@ -1008,9 +1002,7 @@
                 </div>  
             </div>
     </footer>
-    {% load static %}
     <script defer src="{% static 'js/scripts.js' %}"></script>
-    {% load static %}
     <script defer src="{% static 'js/cdn.min.js' %}"></script>
 </body>
 </html>
