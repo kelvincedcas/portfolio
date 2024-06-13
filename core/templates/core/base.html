@@ -1,4 +1,5 @@
-<!-- {% load static tailwind_tags %}
+{% load static tailwind_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth 
 {% if is_dark_theme %} dark {% endif %}">
@@ -7,24 +8,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contrata a Kelvin Cedeño, desarrollador fullstack de Python, Django, Django REST. Diseñador UI/UX con sólidos conocimientos para desarrollar interfaces de usuario atractivas, minimalistas y modernas.">
     <title>Kelvin Cedeño | Django Full Stack Developer</title>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> 
-    {% load static %}
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="shortcut icon" href="{% static 'img/favicon.svg' %}" type="image/x-icon">
     {% tailwind_css %}
 </head>
 <body class="font-raleway text-dark w-full leading-relaxed tracking-wide dark:bg-darkmode h-full">
-    {% include 'core/header.html' %} 
+    {% include 'core/header.html' %}
     
     {% block content %}
         
     {% endblock content %}
 
     {% include 'core/footer.html' %}
-    {% load static %}
-    <Script de la web 
+    <!-- Script de la web -->
     <script defer src="{% static 'js/scripts.js' %}"></script>
-    <Script de AlphineJS 
+    <!-- Script de AlphineJS -->
     <script defer src="{% static 'js/cdn.min.js' %}"></script>
 </body>
-</html> -->
+</html>
